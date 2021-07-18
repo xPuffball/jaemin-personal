@@ -32,19 +32,19 @@ function Container() {
   }
 
   return (
-    <Stack rounded="2xl" h="52vh" maxW="80%" m="auto" direction="row" spacing='0' shadow="lg">
-      <Flex padding="5vh" w="25vw" roundedLeft="2xl" backgroundImage={bg4}>
+    <Stack rounded="2xl" h="60vh" maxW="80%" m="auto" direction="row" spacing='0' shadow="lg">
+      <Flex padding="3vw" w="25vw" roundedLeft="2xl" backgroundImage={bg4}>
         <Center>
-          <Stack color="white" fontWeight="400" spacing="15%" h="100%">
-            <Image src={Logo} rounded="md" boxSize="12vh"></Image>
+          <Stack color="white" fontWeight="400" spacing="10%" h="50vh">
+            <Image src={Logo} rounded="md" mb="-1vh" boxSize={["10em", "10em"]}></Image>
             <Stack spacing="-0.5vh">
-              <Text fontSize="25">jaemin han</Text>
-              <Text>@poof</Text>
+              <Text fontSize="35">jaemin han</Text>
+              <Text fontSize="20">@poof</Text>
             </Stack>
             <Box>
               <Text fontSize='xl'>fullstack web developer</Text>
             </Box>
-            <Stack spacing="4px">
+            <Stack spacing="1px">
               <HStack spacing='5px'><AiFillGithub/><Link href="https://github.com/xPuffball">github</Link></HStack>
               <HStack spacing='5px'><AiFillLinkedin/><Link href="https://www.linkedin.com/in/hanjaemin/">linkedin</Link></HStack>
               <HStack spacing='5px'><FaDiscord/><Text>poof#5402</Text></HStack>
@@ -105,7 +105,7 @@ function Container() {
           <Box
             padding="10px"
             h="90%" 
-            overflowY="scroll"
+            overflowY="hidden"
             overflowX="scroll"
             css={{
               '&::-webkit-scrollbar': {
@@ -114,10 +114,10 @@ function Container() {
             }}
           >  
             <Stack spacing="-1vh">
-              <Text fontSize="6xl" fontWeight="1000">current resume.</Text>
+              <Text fontSize="6xl" fontWeight="1000">current <Link color="#548CA8" href="https://resume.creddle.io/resume/7iap63qaft2">resume.</Link></Text>
               <Text fontSize="lg" fontWeight="500">(last updated: 2021-07-18)</Text>
             </Stack>
-            <iframe src="https://resume.creddle.io/embed/dojzyzmdgar" width="850" height="1100" seamless></iframe>
+            <iframe src="https://resume.creddle.io/embed/dojzyzmdgar" width="700" height="700"></iframe>
           </Box>
         }
         {active === 3 && 
