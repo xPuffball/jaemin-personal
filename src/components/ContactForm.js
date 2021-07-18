@@ -32,7 +32,10 @@ function ContactForm() {
         >
           <FormControl onSubmit={handleSubmit}>
             <Stack>
-              <Text fontSize="6xl" fontWeight="1000">get in touch.</Text>
+              <Stack spacing="-0.5vh" mb="1vh">
+                <Text fontSize="6xl" fontWeight="1000">get in touch.</Text>
+                <Text fontSize="lg" fontWeight="500">{'or use linkedin or discord.'}</Text>
+              </Stack>
               <Input type="email" placeholder="name"/>
               <Input type="email" placeholder="email"/>
               <Input type="email" placeholder="subject"/>
