@@ -30,10 +30,10 @@ function Container() {
   }
 
   return (
-    <Stack rounded="2xl" h="50vh" maxW="80%" m="auto" direction="row" spacing='0' shadow="lg">
+    <Stack rounded="2xl" h="52vh" maxW="80%" m="auto" direction="row" spacing='0' shadow="lg">
       <Flex padding="5vh" w="25vh" roundedLeft="2xl" backgroundImage="bg4.jpg">
         <Center>
-          <Stack color="white" fontWeight="400">
+          <Stack color="white" fontWeight="400" spacing="15%">
             <Image src='Logo.png' rounded="md" boxSize="12vh"></Image>
             <Stack spacing="-0.5vh">
               <Text fontSize="25">jaemin han</Text>
@@ -42,7 +42,7 @@ function Container() {
             <Box>
               <Text fontSize='xl'>fullstack web developer</Text>
             </Box>
-            <Stack spacing="1px">
+            <Stack spacing="4px">
               <HStack spacing='5px'><AiFillGithub/><Link href="https://github.com/xPuffball">github</Link></HStack>
               <HStack spacing='5px'><AiFillLinkedin/><Link href="https://www.linkedin.com/in/hanjaemin/">linkedin</Link></HStack>
               <HStack spacing='5px'><FaDiscord/><Text>poof#5402</Text></HStack>
