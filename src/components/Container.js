@@ -33,9 +33,9 @@ function Container() {
 
   return (
     <Stack rounded="2xl" h="52vh" maxW="80%" m="auto" direction="row" spacing='0' shadow="lg">
-      <Flex padding="5vh" w="25vh" roundedLeft="2xl" backgroundImage={bg4}>
+      <Flex padding="5vh" w="25vw" roundedLeft="2xl" backgroundImage={bg4}>
         <Center>
-          <Stack color="white" fontWeight="400" spacing="15%">
+          <Stack color="white" fontWeight="400" spacing="15%" h="100%">
             <Image src={Logo} rounded="md" boxSize="12vh"></Image>
             <Stack spacing="-0.5vh">
               <Text fontSize="25">jaemin han</Text>
