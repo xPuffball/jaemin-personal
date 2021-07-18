@@ -117,7 +117,7 @@ function Container() {
               <Text fontSize="md" fontWeight="500">(last updated: 2021-07-18 // link above)</Text>
             </Stack>
             <Box>
-              <iframe src="https://resume.creddle.io/embed/dojzyzmdgar" overflow-y="hidden" width="650" height="600"></iframe>
+              <iframe src="https://resume.creddle.io/embed/dojzyzmdgar" overflow-y="hidden" width="600" height="600"></iframe>
             </Box>
           </Box>
         }
