@@ -1,3 +1,4 @@
+import React, { useState, useEffect } from 'react';
 import {
   Box,
   Stack,
@@ -6,16 +7,28 @@ import {
   Flex,
   Image,
   Link,
-  HStack
+  HStack,
+  Spinner
 } from '@chakra-ui/react';
 
 import ProjectCard from './ProjectCard'
+import Resume from './Resume'
 
 import { AiFillGithub, AiFillLinkedin, AiOutlineMail } from 'react-icons/ai'
 import { FaDiscord } from 'react-icons/fa'
 import { ImLocation } from 'react-icons/im'
 
 function Container() {
+  const [active, setActive] = useState(1)
+
+  const activeColor = (num) => {
+    if (active === num){
+      return "black"
+    } else {
+      return "gray.300"
+    }
+  }
+
   return (
     <Stack rounded="2xl" h="50vh" maxW="80%" m="auto" direction="row" spacing='0' shadow="lg">
       <Flex padding="5vh" w="25vh" roundedLeft="2xl" backgroundImage="bg4.jpg">
@@ -42,32 +55,53 @@ function Container() {
         </Center>
       </Flex>
       <Box w = "75vw" bg="white" roundedRight="2xl" paddingLeft="75px" paddingRight="75px" paddingTop="50px" paddingBottom="50px">
-        <Text fontSize="50" fontWeight="900">
-          my work.
-        </Text>
-        <Stack 
-          padding="10px"
-          h="90%" 
-          overflowY="scroll"
-          css={{
-            '&::-webkit-scrollbar': {
-              width: '0px',
-            }
-          }}
-        >
-          <Flex justify="space-between" mb="18px">
-            <ProjectCard name="hobbynet" link="https://github.com/moseskim25/final-project" desc="multi page full stack social media app with search & chat features" tech="node / express / react / psql / socket.io"></ProjectCard>
-            <ProjectCard name="lightquiz" link="https://github.com/jesselap/midterm-quiz" desc="fullstack quiz app with user CRUDable quizzes" tech=" node / express / jquery / psql / bootstrap"></ProjectCard>
-          </Flex>
-          <Flex justify="space-between">
-            <ProjectCard name="scheduler" link="https://github.com/xPuffball/scheduler" desc="fullstack react scheduling app" tech="javascript / react / sql / axios"></ProjectCard>
-            <ProjectCard name="tinyapp" link="https://github.com/xPuffball/tinyapp" desc="RESTful url shortener w/ bootstrap" tech="node / express / jquery / bootstrap"></ProjectCard>
-          </Flex>
-          <Flex justify="space-between">
-            <ProjectCard name="tweeter" link="https://github.com/xPuffball/tweeter" desc="single page twitter clone w/ ajax" tech="node / express / jquery / ajax"></ProjectCard>
-            <ProjectCard name="macaron" link="https://github.com/the-macaron" desc="news app made for nwHacks 2020 (best pitch & honorable mention)" tech="javascript / bootstrap"></ProjectCard>
-          </Flex>
-        </Stack>
+        <HStack spacing="2vw">
+          <Text fontSize="50" fontWeight="900" color={activeColor(1)} onClick={() => {setActive(1)}} _hover={{cursor: "pointer", transition: "all .2s ease-in-out", transform: 'scale(1.05)'}}>
+            work
+          </Text>
+          <Text fontSize="50" fontWeight="900" color={activeColor(2)} onClick={() => {setActive(2)}} _hover={{cursor: "pointer", transition: "all .2s ease-in-out", transform: 'scale(1.05)'}}>
+            resume
+          </Text>
+        </HStack>
+        {active === 1 &&
+          <Stack 
+            padding="10px"
+            h="90%" 
+            overflowY="scroll"
+            css={{
+              '&::-webkit-scrollbar': {
+                width: '0px',
+              }
+            }}
+          >
+            <Flex justify="space-between" mb="18px">
+              <ProjectCard name="hobbynet" link="https://github.com/moseskim25/final-project" desc="multi page full stack social media app with search & chat features" tech="node / express / react / psql / socket.io"></ProjectCard>
+              <ProjectCard name="lightquiz" link="https://github.com/jesselap/midterm-quiz" desc="fullstack quiz app with user CRUDable quizzes" tech=" node / express / jquery / psql / bootstrap"></ProjectCard>
+            </Flex>
+            <Flex justify="space-between">
+              <ProjectCard name="scheduler" link="https://github.com/xPuffball/scheduler" desc="fullstack react scheduling app" tech="javascript / react / sql / axios"></ProjectCard>
+              <ProjectCard name="tinyapp" link="https://github.com/xPuffball/tinyapp" desc="RESTful url shortener w/ bootstrap" tech="node / express / jquery / bootstrap"></ProjectCard>
+            </Flex>
+            <Flex justify="space-between">
+              <ProjectCard name="tweeter" link="https://github.com/xPuffball/tweeter" desc="single page twitter clone w/ ajax" tech="node / express / jquery / ajax"></ProjectCard>
+              <ProjectCard name="macaron" link="https://github.com/the-macaron" desc="news app made for nwHacks 2020 (best pitch & honorable mention)" tech="javascript / bootstrap"></ProjectCard>
+            </Flex>
+          </Stack>
+        }
+        {active === 2 && 
+          <Box
+            padding="10px"
+            h="90%" 
+            overflowY="scroll"
+            css={{
+              '&::-webkit-scrollbar': {
+                width: '0px',
+              }
+            }}
+          >          
+            <iframe src="https://resume.creddle.io/embed/7iap63qaft2" width="850" height="1100" seamless></iframe>
+          </Box>
+        }
       </Box>
     </Stack>
   );

@@ -1,4 +1,4 @@
-import {} from '@chakra-ui/react'
+import { Center } from '@chakra-ui/react'
 import Container from './components/Container'
 
 function App() {
