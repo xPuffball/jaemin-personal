@@ -55,8 +55,8 @@ function Container() {
           }}
         >
           <Flex justify="space-between" mb="18px">
-            <ProjectCard name="HobbyNet" desc="hello bingo bongo" tech="react"></ProjectCard>
-            <ProjectCard></ProjectCard>
+            <ProjectCard name="hobbynet" desc="hello bingo bongo" tech="javascript / react / sql"></ProjectCard>
+            <ProjectCard name="lightquiz" desc="hello bingo bongo" tech="javascript / bootstrap"></ProjectCard>
           </Flex>
           <Flex justify="space-between">
             <ProjectCard></ProjectCard>
