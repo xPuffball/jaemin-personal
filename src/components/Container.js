@@ -33,44 +33,43 @@ function Container() {
 
   return (
     <Stack rounded="2xl" h="60vh" maxW="80%" m="auto" direction="row" spacing='0' shadow="lg">
-      <Flex padding="3vw" w="25vw" roundedLeft="2xl" backgroundImage={bg4}>
+      <Flex padding="2.5vw" w="25vw" roundedLeft="2xl" backgroundImage={bg4}>
         <Center>
           <Stack color="white" fontWeight="400" spacing="10%" h="50vh">
-            <Image src={Logo} rounded="md" mb="-1vh" boxSize={["10em", "10em"]}></Image>
+            <Image src={Logo} rounded="md" mb="-1vh" boxSize='7em'></Image>
             <Stack spacing="-0.5vh">
-              <Text fontSize="35">jaemin han</Text>
-              <Text fontSize="20">@poof</Text>
+              <Text fontSize="25">jaemin han</Text> 
+              <Text fontSize="15">@poof</Text>
             </Stack>
             <Box>
-              <Text fontSize='xl'>fullstack web developer</Text>
+              <Text fontSize='lg'>fullstack web developer</Text>
             </Box>
             <Stack spacing="1px">
-              <HStack spacing='5px'><AiFillGithub/><Link href="https://github.com/xPuffball">github</Link></HStack>
-              <HStack spacing='5px'><AiFillLinkedin/><Link href="https://www.linkedin.com/in/hanjaemin/">linkedin</Link></HStack>
-              <HStack spacing='5px'><FaDiscord/><Text>poof#5402</Text></HStack>
-              <HStack spacing='5px'><AiOutlineMail/><Text>j4emin.han@gmail.com</Text></HStack>
+              <HStack spacing='5px' fontSize='xs'><AiFillGithub/><Link href="https://github.com/xPuffball">github</Link></HStack>
+              <HStack spacing='5px' fontSize='xs'><AiFillLinkedin/><Link href="https://www.linkedin.com/in/hanjaemin/">linkedin</Link></HStack>
+              <HStack spacing='5px' fontSize='xs'><FaDiscord/><Text>poof#5402</Text></HStack>
+              <HStack spacing='5px' fontSize='xs'><AiOutlineMail/><Text>j4emin.han@gmail.com</Text></HStack>
             </Stack>
             <Box>
-              <HStack><ImLocation/><Text>toronto</Text></HStack>
+              <HStack fontSize='xs'><ImLocation/><Text>toronto</Text></HStack>
             </Box>
           </Stack>
         </Center>
       </Flex>
       <Box w = "75vw" bg="white" roundedRight="2xl" paddingLeft="75px" paddingRight="75px" paddingTop="50px" paddingBottom="50px">
         <HStack spacing="2vw">
-          <Text fontSize="50" fontWeight="900" color={activeColor(1)} onClick={() => {setActive(1)}} _hover={{cursor: "pointer", transition: "all .2s ease-in-out", transform: 'scale(1.05)'}}>
+          <Text fontSize="40" fontWeight="900" color={activeColor(1)} onClick={() => {setActive(1)}} _hover={{cursor: "pointer", transition: "all .2s ease-in-out", transform: 'scale(1.05)'}}>
             work
           </Text>
-          <Text fontSize="50" fontWeight="900" color={activeColor(2)} onClick={() => {setActive(2)}} _hover={{cursor: "pointer", transition: "all .2s ease-in-out", transform: 'scale(1.05)'}}>
+          <Text fontSize="40" fontWeight="900" color={activeColor(2)} onClick={() => {setActive(2)}} _hover={{cursor: "pointer", transition: "all .2s ease-in-out", transform: 'scale(1.05)'}}>
             resume
           </Text>
-          <Text fontSize="50" fontWeight="900" color={activeColor(3)} onClick={() => {setActive(3)}} _hover={{cursor: "pointer", transition: "all .2s ease-in-out", transform: 'scale(1.05)'}}>
+          <Text fontSize="40" fontWeight="900" color={activeColor(3)} onClick={() => {setActive(3)}} _hover={{cursor: "pointer", transition: "all .2s ease-in-out", transform: 'scale(1.05)'}}>
             contact
           </Text>
         </HStack>
         {active === 1 &&
           <Stack 
-            padding="10px"
             h="90%" 
             overflowY="scroll"
             css={{
@@ -80,8 +79,8 @@ function Container() {
             }}
           >
             <Stack spacing="-1vh">
-              <Text fontSize="6xl" fontWeight="1000">portfolio.</Text>
-              <Text fontSize="lg" fontWeight="500">(you can scroll!)</Text>
+              <Text fontSize="4xl" fontWeight="1000">portfolio.</Text>
+              <Text fontSize="md" fontWeight="500">(you can scroll!)</Text>
             </Stack>
             <Flex justify="space-between" mb="18px">
               <ProjectCard name="hobbynet" link="https://github.com/moseskim25/final-project" desc="multi page full stack social media app with search & chat features" tech="node / express / react / psql / socket.io"></ProjectCard>
@@ -103,7 +102,6 @@ function Container() {
         }
         {active === 2 && 
           <Box
-            padding="10px"
             h="90%" 
             overflowY="hidden"
             overflowX="scroll"
@@ -114,10 +112,10 @@ function Container() {
             }}
           >  
             <Stack spacing="-1vh">
-              <Text fontSize="6xl" fontWeight="1000">current <Link color="#548CA8" href="https://resume.creddle.io/resume/7iap63qaft2">resume.</Link></Text>
-              <Text fontSize="lg" fontWeight="500">(last updated: 2021-07-18)</Text>
+              <Text fontSize="4xl" fontWeight="1000">current <Link color="#548CA8" href="https://resume.creddle.io/resume/7iap63qaft2">resume.</Link></Text>
+              <Text fontSize="md" fontWeight="500">(last updated: 2021-07-18)</Text>
             </Stack>
-            <iframe src="https://resume.creddle.io/embed/dojzyzmdgar" width="700" height="700"></iframe>
+            <iframe src="https://resume.creddle.io/embed/dojzyzmdgar" width="600" height="700"></iframe>
           </Box>
         }
         {active === 3 && 

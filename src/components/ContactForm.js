@@ -24,9 +24,7 @@ function ContactForm() {
   }
   return (
         <Stack
-          padding="10px"
           h="90%" 
-          padding="10px" 
           overflowY="scroll"
           css={{
             '&::-webkit-scrollbar': {
@@ -38,8 +36,8 @@ function ContactForm() {
             <FormControl>
               <Stack>
                 <Stack spacing="-1vh" mb="1vh">
-                  <Text fontSize="6xl" fontWeight="1000">get in touch.</Text>
-                  <Text fontSize="lg" fontWeight="500">{'(or @ me on linkedin or discord)'}</Text>
+                  <Text fontSize="4xl" fontWeight="1000">get in touch.</Text>
+                  <Text fontSize="md" fontWeight="500">{'(or @ me on linkedin or discord)'}</Text>
                 </Stack>
                 <Input id="name" name="name" type="text" placeholder="name"/>
                 <Input id="email" type="email" name="email" placeholder="email"/>
