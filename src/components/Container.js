@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from 'react';
+import Logo from './Logo.png'
+import bg4 from './bg4.jpg'
 import {
   Box,
   Stack,
@@ -31,10 +33,10 @@ function Container() {
 
   return (
     <Stack rounded="2xl" h="52vh" maxW="80%" m="auto" direction="row" spacing='0' shadow="lg">
-      <Flex padding="5vh" w="25vh" roundedLeft="2xl" backgroundImage="bg4.jpg">
+      <Flex padding="5vh" w="25vh" roundedLeft="2xl" backgroundImage={bg4}>
         <Center>
           <Stack color="white" fontWeight="400" spacing="15%">
-            <Image src='Logo.png' rounded="md" boxSize="12vh"></Image>
+            <Image src={Logo} rounded="md" boxSize="12vh"></Image>
             <Stack spacing="-0.5vh">
               <Text fontSize="25">jaemin han</Text>
               <Text>@poof</Text>
