@@ -46,6 +46,7 @@ function Container() {
           my work.
         </Text>
         <Stack 
+          padding="10px"
           h="90%" 
           overflowY="scroll"
           css={{
@@ -55,16 +56,16 @@ function Container() {
           }}
         >
           <Flex justify="space-between" mb="18px">
-            <ProjectCard name="hobbynet" desc="multi page full stack social media app with search & chat features" tech="node / express / react / psql / socket.io"></ProjectCard>
-            <ProjectCard name="lightquiz" desc="fullstack quiz app with user CRUDable quizzes" tech=" node / express / jquery / psql / bootstrap"></ProjectCard>
+            <ProjectCard name="hobbynet" link="https://github.com/moseskim25/final-project" desc="multi page full stack social media app with search & chat features" tech="node / express / react / psql / socket.io"></ProjectCard>
+            <ProjectCard name="lightquiz" link="https://github.com/jesselap/midterm-quiz" desc="fullstack quiz app with user CRUDable quizzes" tech=" node / express / jquery / psql / bootstrap"></ProjectCard>
           </Flex>
           <Flex justify="space-between">
-            <ProjectCard name="scheduler" desc="fullstack react scheduling app" tech="javascript / react / sql / axios"></ProjectCard>
-            <ProjectCard name="tinyapp" desc="RESTful url shortener w/ bootstrap" tech="node / express / jquery / bootstrap"></ProjectCard>
+            <ProjectCard name="scheduler" link="https://github.com/xPuffball/scheduler" desc="fullstack react scheduling app" tech="javascript / react / sql / axios"></ProjectCard>
+            <ProjectCard name="tinyapp" link="https://github.com/xPuffball/tinyapp" desc="RESTful url shortener w/ bootstrap" tech="node / express / jquery / bootstrap"></ProjectCard>
           </Flex>
           <Flex justify="space-between">
-            <ProjectCard name="tweeter" desc="single page twitter clone w/ ajax" tech="node / express / jquery / ajax"></ProjectCard>
-            <ProjectCard name="macaron" desc="news app made for nwHacks 2020 (best pitch & honorable mention)" tech="javascript / bootstrap"></ProjectCard>
+            <ProjectCard name="tweeter" link="https://github.com/xPuffball/tweeter" desc="single page twitter clone w/ ajax" tech="node / express / jquery / ajax"></ProjectCard>
+            <ProjectCard name="macaron" link="https://github.com/the-macaron" desc="news app made for nwHacks 2020 (best pitch & honorable mention)" tech="javascript / bootstrap"></ProjectCard>
           </Flex>
         </Stack>
       </Box>
