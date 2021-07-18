@@ -12,7 +12,7 @@ import {
 } from '@chakra-ui/react';
 
 import ProjectCard from './ProjectCard'
-import Resume from './Resume'
+import ContactForm from './ContactForm'
 
 import { AiFillGithub, AiFillLinkedin, AiOutlineMail } from 'react-icons/ai'
 import { FaDiscord } from 'react-icons/fa'
@@ -62,6 +62,9 @@ function Container() {
           <Text fontSize="50" fontWeight="900" color={activeColor(2)} onClick={() => {setActive(2)}} _hover={{cursor: "pointer", transition: "all .2s ease-in-out", transform: 'scale(1.05)'}}>
             resume
           </Text>
+          <Text fontSize="50" fontWeight="900" color={activeColor(3)} onClick={() => {setActive(3)}} _hover={{cursor: "pointer", transition: "all .2s ease-in-out", transform: 'scale(1.05)'}}>
+            contact
+          </Text>
         </HStack>
         {active === 1 &&
           <Stack 
@@ -74,6 +77,7 @@ function Container() {
               }
             }}
           >
+            <Text fontSize="6xl" fontWeight="1000">my portfolio.</Text>
             <Flex justify="space-between" mb="18px">
               <ProjectCard name="hobbynet" link="https://github.com/moseskim25/final-project" desc="multi page full stack social media app with search & chat features" tech="node / express / react / psql / socket.io"></ProjectCard>
               <ProjectCard name="lightquiz" link="https://github.com/jesselap/midterm-quiz" desc="fullstack quiz app with user CRUDable quizzes" tech=" node / express / jquery / psql / bootstrap"></ProjectCard>
@@ -98,9 +102,13 @@ function Container() {
                 width: '0px',
               }
             }}
-          >          
+          >  
+            <Text fontSize="6xl" fontWeight="1000">my current resume.</Text>
             <iframe src="https://resume.creddle.io/embed/7iap63qaft2" width="850" height="1100" seamless></iframe>
           </Box>
+        }
+        {active === 3 && 
+          <ContactForm></ContactForm>
         }
       </Box>
     </Stack>
