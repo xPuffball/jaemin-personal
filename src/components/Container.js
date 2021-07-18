@@ -104,6 +104,7 @@ function Container() {
             padding="10px"
             h="90%" 
             overflowY="scroll"
+            overflowX="scroll"
             css={{
               '&::-webkit-scrollbar': {
                 width: '0px',
