@@ -114,7 +114,7 @@ function Container() {
               <Text fontSize="6xl" fontWeight="1000">current resume.</Text>
               <Text fontSize="lg" fontWeight="500">(last updated: 2021-07-18)</Text>
             </Stack>
-            <iframe src="https://resume.creddle.io/embed/7iap63qaft2" width="850" height="1100" seamless></iframe>
+            <iframe src="https://resume.creddle.io/embed/dojzyzmdgar" width="850" height="1100" seamless></iframe>
           </Box>
         }
         {active === 3 && 
