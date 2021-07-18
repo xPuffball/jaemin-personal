@@ -75,6 +75,7 @@ function Container() {
             css={{
               '&::-webkit-scrollbar': {
                 width: '0px',
+                
               }
             }}
           >
@@ -113,9 +114,11 @@ function Container() {
           >  
             <Stack spacing="-1vh">
               <Text fontSize="4xl" fontWeight="1000">current <Link color="#548CA8" href="https://resume.creddle.io/resume/7iap63qaft2">resume.</Link></Text>
-              <Text fontSize="md" fontWeight="500">(last updated: 2021-07-18)</Text>
+              <Text fontSize="md" fontWeight="500">(last updated: 2021-07-18 // link above)</Text>
             </Stack>
-            <iframe src="https://resume.creddle.io/embed/dojzyzmdgar" width="600" height="700"></iframe>
+            <Box>
+              <iframe src="https://resume.creddle.io/embed/dojzyzmdgar" overflow-y="hidden" width="650" height="600"></iframe>
+            </Box>
           </Box>
         }
         {active === 3 && 
