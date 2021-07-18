@@ -56,7 +56,7 @@ function Container() {
           </Stack>
         </Center>
       </Flex>
-      <Box w = "75vw" bg="white" roundedRight="2xl" paddingLeft="75px" paddingRight="75px" paddingTop="50px" paddingBottom="50px">
+      <Box w = "75vw" bg="white" roundedRight="2xl" paddingLeft="75px" paddingRight="75px" paddingTop="5vh" paddingBottom="5vh">
         <HStack spacing="2vw">
           <Text fontSize="40" fontWeight="900" color={activeColor(1)} onClick={() => {setActive(1)}} _hover={{cursor: "pointer", transition: "all .2s ease-in-out", transform: 'scale(1.05)'}}>
             work
@@ -104,8 +104,7 @@ function Container() {
         {active === 2 && 
           <Box
             h="90%" 
-            overflowY="hidden"
-            overflowX="scroll"
+            overflow='auto'
             css={{
               '&::-webkit-scrollbar': {
                 width: '0px',
@@ -116,9 +115,9 @@ function Container() {
               <Text fontSize="4xl" fontWeight="1000">current <Link color="#548CA8" href="https://resume.creddle.io/resume/7iap63qaft2">resume.</Link></Text>
               <Text fontSize="md" fontWeight="500">(last updated: 2021-07-18 // link above)</Text>
             </Stack>
-            <Box>
-              <iframe src="https://resume.creddle.io/embed/dojzyzmdgar" overflow-y="hidden" width="600" height="600"></iframe>
-            </Box>
+            <Flex height="100%">
+              <iframe src="https://resume.creddle.io/embed/dojzyzmdgar" width="600"></iframe>
+            </Flex>
           </Box>
         }
         {active === 3 && 
