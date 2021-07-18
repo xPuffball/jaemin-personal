@@ -77,7 +77,10 @@ function Container() {
               }
             }}
           >
-            <Text fontSize="6xl" fontWeight="1000">my portfolio.</Text>
+            <Stack spacing="-1vh">
+              <Text fontSize="6xl" fontWeight="1000">portfolio.</Text>
+              <Text fontSize="lg" fontWeight="500">(you can scroll!)</Text>
+            </Stack>
             <Flex justify="space-between" mb="18px">
               <ProjectCard name="hobbynet" link="https://github.com/moseskim25/final-project" desc="multi page full stack social media app with search & chat features" tech="node / express / react / psql / socket.io"></ProjectCard>
               <ProjectCard name="lightquiz" link="https://github.com/jesselap/midterm-quiz" desc="fullstack quiz app with user CRUDable quizzes" tech=" node / express / jquery / psql / bootstrap"></ProjectCard>
@@ -103,7 +106,10 @@ function Container() {
               }
             }}
           >  
-            <Text fontSize="6xl" fontWeight="1000">my current resume.</Text>
+            <Stack spacing="-1vh">
+              <Text fontSize="6xl" fontWeight="1000">current resume.</Text>
+              <Text fontSize="lg" fontWeight="500">(last updated: 2021-07-18)</Text>
+            </Stack>
             <iframe src="https://resume.creddle.io/embed/7iap63qaft2" width="850" height="1100" seamless></iframe>
           </Box>
         }

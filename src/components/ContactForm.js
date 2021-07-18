@@ -37,9 +37,9 @@ function ContactForm() {
           <form onSubmit={handleSubmit}>
             <FormControl>
               <Stack>
-                <Stack spacing="-0.5vh" mb="1vh">
+                <Stack spacing="-1vh" mb="1vh">
                   <Text fontSize="6xl" fontWeight="1000">get in touch.</Text>
-                  <Text fontSize="lg" fontWeight="500">{'or use linkedin or discord.'}</Text>
+                  <Text fontSize="lg" fontWeight="500">{'(or @ me on linkedin or discord)'}</Text>
                 </Stack>
                 <Input id="name" name="name" type="text" placeholder="name"/>
                 <Input id="email" type="email" name="email" placeholder="email"/>
