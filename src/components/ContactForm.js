@@ -16,7 +16,11 @@ import { useForm, ValidationError } from '@formspree/react';
 function ContactForm() {
   const [state, handleSubmit] = useForm("mnqlbgnl");
   if (state.succeeded) {
-      return <p>Thanks for joining!</p>;
+      return (
+        <Center padding="10px" h="90%">
+          <Text fontSize="50">thanks for getting in touch!</Text>
+        </Center>
+      )
   }
   return (
         <Stack
@@ -30,19 +34,21 @@ function ContactForm() {
             }
           }}
         >
-          <FormControl onSubmit={handleSubmit}>
-            <Stack>
-              <Stack spacing="-0.5vh" mb="1vh">
-                <Text fontSize="6xl" fontWeight="1000">get in touch.</Text>
-                <Text fontSize="lg" fontWeight="500">{'or use linkedin or discord.'}</Text>
+          <form onSubmit={handleSubmit}>
+            <FormControl>
+              <Stack>
+                <Stack spacing="-0.5vh" mb="1vh">
+                  <Text fontSize="6xl" fontWeight="1000">get in touch.</Text>
+                  <Text fontSize="lg" fontWeight="500">{'or use linkedin or discord.'}</Text>
+                </Stack>
+                <Input id="name" name="name" type="text" placeholder="name"/>
+                <Input id="email" type="email" name="email" placeholder="email"/>
+                <Input type="text" placeholder="subject"/>
+                <Textarea id="message" name="message" placeholder="what's up?" h="10vh"></Textarea>
+                <Button type="submit" disabled={state.submitting}>send me a message</Button>
               </Stack>
-              <Input type="email" placeholder="name"/>
-              <Input type="email" placeholder="email"/>
-              <Input type="email" placeholder="subject"/>
-              <Textarea placeholder="what's up?" h="10vh"></Textarea>
-              <Button type="submit" disabled={state.submitting}>send me a message</Button>
-            </Stack>
-          </FormControl>
+            </FormControl>
+          </form>
         </Stack>
   );
 }
