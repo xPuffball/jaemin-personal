@@ -93,6 +93,10 @@ function Container() {
               <ProjectCard name="tweeter" link="https://github.com/xPuffball/tweeter" desc="single page twitter clone w/ ajax" tech="node / express / jquery / ajax"></ProjectCard>
               <ProjectCard name="macaron" link="https://github.com/the-macaron" desc="news app made for nwHacks 2020 (best pitch & honorable mention)" tech="javascript / bootstrap"></ProjectCard>
             </Flex>
+            <Flex justify="space-between">
+              <ProjectCard name="jaemin's portfolio" link="https://github.com/xPuffball/jaemin-personal" desc="minimalistic webpage for portfolio/contact purposes (you're looking at it!)" tech="javascript / react / chakraui"></ProjectCard>
+              <ProjectCard name="WIP" link="/" desc="next project is wip! will show up when done (probably...)" tech="TBD"></ProjectCard>
+            </Flex>
           </Stack>
         }
         {active === 2 && 
