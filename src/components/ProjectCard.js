@@ -7,9 +7,9 @@ function ProjectCard(props) {
     return (
         <Box rounded="md" w="49%" minH="16.8vh" shadow="md" padding="3vh">
             <Flex direction="column" h="100%" justify="space-around">
-                <Text fontSize="2xl" fontWeight="600">{name}</Text>
+                <Text fontSize="5xl" fontWeight="600">{name}</Text>
                 <Text fontSize="xl">{desc}</Text>
-                <HStack fontSize="xl" fontWeight="600"><FaCode/><Text>{tech}</Text></HStack>
+                <HStack fontSize="md" fontWeight="600"><FaCode/><Text>{tech}</Text></HStack>
             </Flex>
         </Box>
     )

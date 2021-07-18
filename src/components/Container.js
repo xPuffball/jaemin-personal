@@ -55,16 +55,16 @@ function Container() {
           }}
         >
           <Flex justify="space-between" mb="18px">
-            <ProjectCard name="hobbynet" desc="hello bingo bongo" tech="javascript / react / sql"></ProjectCard>
-            <ProjectCard name="lightquiz" desc="hello bingo bongo" tech="javascript / bootstrap"></ProjectCard>
+            <ProjectCard name="hobbynet" desc="hello bingo bongo" tech="node / express / react / psql / socket.io"></ProjectCard>
+            <ProjectCard name="lightquiz" desc="fullstack quiz app with user CRUDable quizzes" tech=" node / express / jquery / psql / bootstrap"></ProjectCard>
           </Flex>
           <Flex justify="space-between">
-            <ProjectCard></ProjectCard>
-            <ProjectCard></ProjectCard>
+            <ProjectCard name="scheduler" desc="fullstack react scheduling app" tech="javascript / react / sql / axios"></ProjectCard>
+            <ProjectCard name="tinyapp" desc="RESTful url shortener w/ bootstrap" tech="node / express / jquery / bootstrap"></ProjectCard>
           </Flex>
           <Flex justify="space-between">
-            <ProjectCard></ProjectCard>
-            <ProjectCard></ProjectCard>
+            <ProjectCard name="tweeter" desc="single page twitter clone w/ ajax" tech="node / express / jquery / ajax"></ProjectCard>
+            <ProjectCard name="macaron" desc="RESTful url shortener w/ bootstrap" tech="javascript / bootstrap"></ProjectCard>
           </Flex>
           <Flex justify="space-between">
             <ProjectCard></ProjectCard>
