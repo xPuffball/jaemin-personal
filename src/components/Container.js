@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Logo from './Logo.png'
 import bg4 from './bg4.jpg'
-import resume from './resume.pdf'
+import resume from './Jaemin Han - Resume.pdf'
 import {
   Box,
   Stack,
