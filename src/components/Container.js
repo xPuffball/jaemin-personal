@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Logo from './Logo.png'
 import bg4 from './bg4.jpg'
+import resume from './resume.pdf'
 import {
   Box,
   Stack,
@@ -45,8 +46,8 @@ function Container() {
               <Text fontSize='lg'>data scientist</Text>
             </Box>
             <Stack spacing="1px">
-              <HStack spacing='5px' fontSize='xs'><AiFillGithub/><u><Link href="https://github.com/xPuffball">github</Link></u></HStack>
-              <HStack spacing='5px' fontSize='xs'><AiFillLinkedin/><u><Link href="https://www.linkedin.com/in/hanjaemin/">linkedin</Link></u></HStack>
+              <HStack spacing='5px' fontSize='xs'><AiFillGithub/><u><Link href="https://github.com/xPuffball" target="_blank">github</Link></u></HStack>
+              <HStack spacing='5px' fontSize='xs'><AiFillLinkedin/><u><Link href="https://www.linkedin.com/in/hanjaemin/" target="_blank">linkedin</Link></u></HStack>
               <HStack spacing='5px' fontSize='xs'><FaDiscord/><Text>poof#5402</Text></HStack>
               <HStack spacing='5px' fontSize='xs'><AiOutlineMail/><Text>j4emin.han@gmail.com</Text></HStack>
             </Stack>
@@ -112,11 +113,11 @@ function Container() {
             }}
           >  
             <Stack spacing="-1vh">
-              <Text fontSize="4xl" fontWeight="1000">current <Link color="#548CA8" href="https://resume.creddle.io/resume/7iap63qaft2">resume.</Link></Text>
-              <Text fontSize="md" fontWeight="500">(last updated: 2021-07-18 // link above)</Text>
+              <Text fontSize="4xl" fontWeight="1000">current <Link target="_blank" color="#548CA8" href="https://docs.google.com/document/d/1Kxy76w-jaXeDHUkvaXTUrxGKYzem7GcH/edit?usp=sharing&ouid=106910369347116897173&rtpof=true&sd=true">resume.</Link></Text>
+              <Text fontSize="md" fontWeight="500">(last updated: 2023-10-25 // link above)</Text>
             </Stack>
             <Flex height="100%">
-              <iframe src="https://resume.creddle.io/embed/dojzyzmdgar" width="600"></iframe>
+              <iframe src={resume} width="600"></iframe>
             </Flex>
           </Box>
         }
