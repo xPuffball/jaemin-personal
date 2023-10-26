@@ -42,11 +42,11 @@ function Container() {
               <Text fontSize="15">@poof</Text>
             </Stack>
             <Box>
-              <Text fontSize='lg'>fullstack web developer</Text>
+              <Text fontSize='lg'>data scientist</Text>
             </Box>
             <Stack spacing="1px">
-              <HStack spacing='5px' fontSize='xs'><AiFillGithub/><Link href="https://github.com/xPuffball">github</Link></HStack>
-              <HStack spacing='5px' fontSize='xs'><AiFillLinkedin/><Link href="https://www.linkedin.com/in/hanjaemin/">linkedin</Link></HStack>
+              <HStack spacing='5px' fontSize='xs'><AiFillGithub/><u><Link href="https://github.com/xPuffball">github</Link></u></HStack>
+              <HStack spacing='5px' fontSize='xs'><AiFillLinkedin/><u><Link href="https://www.linkedin.com/in/hanjaemin/">linkedin</Link></u></HStack>
               <HStack spacing='5px' fontSize='xs'><FaDiscord/><Text>poof#5402</Text></HStack>
               <HStack spacing='5px' fontSize='xs'><AiOutlineMail/><Text>j4emin.han@gmail.com</Text></HStack>
             </Stack>
@@ -84,8 +84,8 @@ function Container() {
               <Text fontSize="md" fontWeight="500">(you can scroll!)</Text>
             </Stack>
             <Flex justify="space-between" mb="18px">
+              <ProjectCard name="macaron" link="https://github.com/the-macaron" desc="news app made for nwHacks 2020 (best pitch & honorable mention)" tech="javascript / bootstrap"></ProjectCard>
               <ProjectCard name="hobbynet" link="https://github.com/moseskim25/final-project" desc="multi page full stack social media app with search & chat features" tech="node / express / react / psql / socket.io"></ProjectCard>
-              <ProjectCard name="lightquiz" link="https://github.com/jesselap/midterm-quiz" desc="fullstack quiz app with user CRUDable quizzes" tech=" node / express / jquery / psql / bootstrap"></ProjectCard>
             </Flex>
             <Flex justify="space-between">
               <ProjectCard name="scheduler" link="https://github.com/xPuffball/scheduler" desc="fullstack react scheduling app" tech="javascript / react / sql / axios"></ProjectCard>
@@ -93,10 +93,10 @@ function Container() {
             </Flex>
             <Flex justify="space-between">
               <ProjectCard name="tweeter" link="https://github.com/xPuffball/tweeter" desc="single page twitter clone w/ ajax" tech="node / express / jquery / ajax"></ProjectCard>
-              <ProjectCard name="macaron" link="https://github.com/the-macaron" desc="news app made for nwHacks 2020 (best pitch & honorable mention)" tech="javascript / bootstrap"></ProjectCard>
+              <ProjectCard name="jaemin's portfolio" link="https://github.com/xPuffball/jaemin-personal" desc="minimalistic webpage for portfolio/contact purposes (you're looking at it!)" tech="react / python / nltk"></ProjectCard>
             </Flex>
             <Flex justify="space-between">
-              <ProjectCard name="jaemin's portfolio" link="https://github.com/xPuffball/jaemin-personal" desc="minimalistic webpage for portfolio/contact purposes (you're looking at it!)" tech="javascript / react / chakraui"></ProjectCard>
+              <ProjectCard name="lightquiz" link="https://github.com/jesselap/midterm-quiz" desc="fullstack quiz app with user CRUDable quizzes" tech=" node / express / jquery / psql / bootstrap"></ProjectCard>
               <ProjectCard name="WIP" link="/" desc="next project is wip! will show up when done (probably...)" tech="TBD"></ProjectCard>
             </Flex>
           </Stack>
